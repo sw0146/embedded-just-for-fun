@@ -13,8 +13,8 @@
 #define RCC_SIZE_BYTES      KIB(1)        /* 끝 주소 0x400213FF */
 
 typedef struct {
-    uint32_t base;
-    uint32_t size;
+    uint32_t base;//시작점
+    uint32_t size;//메모리 section size
     MemoryRegion region;
 } RegionRange;
 
